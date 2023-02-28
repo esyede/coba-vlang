@@ -1,0 +1,19 @@
+<html>
+<header>
+	<title>Blog</title>
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/kimeiga/bahunya/dist/bahunya.min.css">
+</header>
+<body>
+	@for article in articles
+		<div>
+			<h4>@article.title</h4>
+			<p>@article.text</p>
+			<br>
+			<small>Oleh: @app.author - @article.created_at</small>
+		</div>
+		<br>
+	@end
+	<br>
+	<a href='/create'>Tulis baru</a>
+</body>
+</html>
